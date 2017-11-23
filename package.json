@@ -1,0 +1,47 @@
+{
+  "name": "generator-esm",
+  "version": "0.0.0",
+  "description": "Yeoman generator for EcmaScript/JavaScript Modules",
+  "files": [
+    "app"
+  ],
+  "scripts": {
+    "test": "npm run lint && jest",
+    "test:watch": "jest --watch",
+    "lint": "standard | snazzy",
+    "lint:fix": "standard --fix | snazzy"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "javascript",
+    "module",
+    "esnext"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvartborg/generator-esm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kvartborg/generator-esm/issues"
+  },
+  "author": "Frederik Kvartborg Albertsen",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^21.0.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "jest": "^21.1.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-test": "^1.7.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/app/"
+    ]
+  }
+}
